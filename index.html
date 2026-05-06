@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Cloud - UFG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 60px 80px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #5f6368;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #1a73e8;
+        }
+
+        .info-card h3 {
+            color: #1a73e8;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: #202124;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #5f6368;
+            font-size: 0.9em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1a73e8;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VM rodando no Google Cloud</h1>
+        <p class="subtitle">Demonstração de Infraestrutura em Nuvem</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Provedor</h3>
+                <p>Google Cloud Platform</p>
+            </div>
+            <div class="info-card">
+                <h3>Serviço</h3>
+                <p>Compute Engine</p>
+            </div>
+            <div class="info-card">
+                <h3>Container</h3>
+                <p>Nginx via Docker</p>
+            </div>
+            <div class="info-card">
+                <h3>Acesso</h3>
+                <p>Porta 3000 - HTTP</p>
+            </div>
+        </div>
+
+        <span class="badge">Grupo de Estudos MLOps</span>
+
+        <div class="footer">
+            <p>Universidade Federal de Goiás - Instituto de Informática</p>
+            <p>Apresentação: Arthur de Souza & Raniel Brenner</p>
+        </div>
+    </div>
+</body>
+</html>
